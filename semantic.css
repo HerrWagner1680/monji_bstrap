@@ -1,0 +1,28 @@
+#wrapper {
+	background: #eee;
+}
+
+.container {
+	background: #fff;
+}
+
+.navbar {
+	height: 60px;
+	background: linear-gradient(#ddd, #aaa);
+}
+
+.navbar-header {
+	width: 100%;
+}
+
+.container-fluid {
+	padding-top: 12px;
+}
+
+#search-button {
+	float:right;
+}
+
+span .glyphicon-search {
+	float: right;
+}
