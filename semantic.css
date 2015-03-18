@@ -1,9 +1,10 @@
 .navbar {
 	height: 60px;
 	background: linear-gradient(#ccc, #999);
+	border-radius: 0px;
 }
 
-.navbar-header {
+.navbar > .container-fluid > .navbar-header {
 	width: 100%;
 	margin-left: 0px; /* for some reason, default is -15px */
 }
@@ -25,6 +26,12 @@ img#semantic-icon {
 	height: 40px;
 	margin: 0 auto;
 	margin-top: -38px;
+}
+
+section.description {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	margin-right: 20px;
 }
 
 button {
@@ -50,11 +57,13 @@ button {
 }
 
 img#one-account {
+	display: block;
 	width: 200px;
 }
 
 img#across-devices {
-	width: 300px;
+	display: block;
+	width: 350px; /* collapsible to smaller image */
 }
 
 #account-form {
