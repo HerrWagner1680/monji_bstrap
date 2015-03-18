@@ -1,28 +1,62 @@
-#wrapper {
-	background: #eee;
-}
-
-.container {
-	background: #fff;
-}
-
 .navbar {
 	height: 60px;
-	background: linear-gradient(#ddd, #aaa);
+	background: linear-gradient(#ccc, #999);
 }
 
 .navbar-header {
 	width: 100%;
+	margin-left: 0px; /* for some reason, default is -15px */
 }
 
 .container-fluid {
 	padding-top: 12px;
 }
 
-#search-button {
-	float:right;
+img#semantic-icon:before {
+	content:" ";
+	width: 180px;
+	height: 40px;
+	clear: both;
 }
 
-span .glyphicon-search {
-	float: right;
+img#semantic-icon {
+	display: block;
+	width: 180px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: -38px;
+}
+
+button {
+	background-color: red;
+}
+
+.glyphicon {
+	color: #3366cc;
+}
+
+#nav-menu {
+	background-color: transparent;
+	border: 2px solid #ddd;
+	border-radius: 0px;
+}
+
+#search-button {
+	background-color: transparent;
+	border: 2px solid #ddd;
+	border-radius: 0px;
+	float:right;
+	margin-right: 0px;
+}
+
+img#one-account {
+	width: 200px;
+}
+
+img#across-devices {
+	width: 300px;
+}
+
+#account-form {
+	border-left: 2px solid gray;
 }
