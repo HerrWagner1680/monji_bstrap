@@ -39,24 +39,25 @@
   </div>
 </nav>
 
-<div class="container">
+<div id="wrapper" class="container">
+
+	<div id="empty-div-left">
+	</div>
+
 
 <div class="row">
 
-	<div class="col-sm-1 col-xs-1">
-	</div>
-
-	<div class="col-sm-6 col-xs-5">
+	<div class="col-sm-7 col-md-7">
 
 	<section class="description">
-	<h4>One account...that's it.</h4>
+	<h3>One account...that's it.</h3>
 	<small>Curabitur at aliquet massa, quis consectetur tellus. Aenean non malesuada diam. In dapibus nist a posuere rutrum. Interdum et malesuada fames.</small>
 
 	<img id="one-account" src="./images/one_account.png" alt="one account image">
 	</section>
 
 	<section class="description">
-	<h4>Pick up where you left off across devices...</h4>
+	<h3>Pick up where you left off across devices...</h3>
 	<small>Curabitur at aliquet massa, quis consectetur tellus. Aenean non malesuada diam. In dapibus nist a posuere rutrum. Interdum et malesuada fames.</small>
 
 	<img id="across-devices" src="./images/across_devices.png" alt="across device image">
@@ -66,79 +67,86 @@
 
 
 
-	<div id="account-form" class="col-sm-4 col-xs-5">
+	<div id="account-form" class="col-sm-4 col-md-4">
 	<h4>Create your account.</h4>
 
 	<form>
 		<div class="form-group">
-			<small class="text-right">*Required</small>
-		    <label for="exampleInputFirstname1">*First Name</label>
-		    <!-- *Required -->
-    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Homer">
+
+		    <label for="exampleInputFirstname"><small>*First Name</small></label>
+			<small class="text-right float-right"><span>*Required</span></small>
+
+    		<input type="text" class="form-control input-sm" id="exampleInputFirstname" placeholder="Homer">
 		</div>
 		<div class="form-group">
-		    <label for="exampleInputLastname2">*Last Name</label>
-    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Simpson">
+		    <label for="exampleInputLastname"><small>*Last Name</small></label>
+    		<input type="email" class="form-control input-sm" id="exampleInputLastname" placeholder="Simpson">
 		</div>		
 		<div class="form-group">
-		    <label for="exampleInputUsername1">*Username</label>
-    		<input type="email" class="form-control" id="exampleInputEmail1" placeholder="HomerSimpson1988">
+		    <label for="exampleInputUsername1"><small>*Username</small></label>
+    		<input type="email" class="form-control input-sm" id="exampleInputEmail1" placeholder="HomerSimpson1988">
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword1">*Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			<label for="exampleInputPassword1"><small>*Password</small></label>
+			<input type="password" class="form-control input-sm" id="exampleInputPassword1" placeholder="Password">
 		</div>
 		<div class="form-group">
-			<label for="exampleInputPassword2">*Confirm Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			<label for="exampleInputPassword2"><small>*Confirm Password</small></label>
+			<input type="password" class="form-control input-sm" id="exampleInputPassword1" placeholder="Password">
 		</div>
 		<div class="form-group">
 
 
 <!-- date of birth -->
-	<div class="form-inline">Date of Birth (MM/DD/YYYY)
-	  <div class="form-group">
+	<div class="form-inline">
+	<label for="date of birth"><small>Date of Birth (MM/DD/YYYY)</small></label>
+	<br>
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB1"> / </label>
-	    <input type="month" class="form-control" id="exampleInputDOB1" placeholder="00">
+	    <input type="text" class="form-control input-sm" id="exampleInputDOB1" placeholder="00">
 	  </div>
 	  /
-	  <div class="form-group">
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB2"> / </label>
-	    <input type="day" class="form-control" id="exampleInputDOB2" placeholder="00">
+	    <input type="text" class="form-control input-sm" id="exampleInputDOB2" placeholder="00">
 	  </div>
 	  /
-	  <div class="form-group">
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB3"> / </label>
-	    <input type="year" class="form-control" id="exampleInputDOB3" placeholder="0000">
+	    <input type="text" class="form-control input-sm" id="exampleInputDOB3" placeholder="0000">
 	  </div>
 	</div>
 
 
 		</div>
 		<div class="form-group">
-			<label class="radio-inline">Gender</label>
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
-			</label>
-			<label class="radio-inline">
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
-			</label>
+			<label for="gender"><small>Gender</small></label>
+			<br>
+<!-- 			<label class="radio-inline">Gender</label> -->
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><span class="gender">Male</span>
+		<!-- 	</label> -->
+			<!-- <label class="radio-inline"> -->
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><span class="gender">Female</span>
+		<!-- 	</label> -->
 		</div>
 
 <!-- phone number -->
-	<div class="form-inline">Mobile Phone
-	  <div class="form-group">
+	<div class="form-inline">
+	<label for="mobile phone"><small>Mobile Phone</small></label>
+	<br>
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB1"> / </label>
-	    <input type="tel" class="form-control" id="exampleInputDOB1" placeholder="000">
+	    <input type="tel" class="form-control input-sm" id="exampleInputTel1" placeholder="000">
 	  </div>
 	  -
-	  <div class="form-group">
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB2"> / </label>
-	    <input type="tel" class="form-control" id="exampleInputDOB2" placeholder="000">
+	    <input type="tel" class="form-control input-sm" id="exampleInputTel2" placeholder="000">
 	  </div>
 	  -
-	  <div class="form-group">
+	  <div class="form-group display-inline-block">
 	    <label class="sr-only" for="exampleInputDOB3"> / </label>
-	    <input type="tel" class="form-control" id="exampleInputDOB3" placeholder="0000">
+	    <input type="tel" class="form-control input-sm" id="exampleInputTel3" placeholder="0000">
 	  </div>
 	</div>
 
@@ -146,40 +154,44 @@
 
 		<div class="form-group">
 		</div>
-		*Location
-		<select class="form-control">
+		<label for="location"><small>*Location</small></label>
+		<select class="form-control input-sm">
 		  <option>United States</option>
 		  <option>Afghanistan</option>
 		  <option>Australia</option>
 		  <option>Austria</option>
 		  <option>Other</option>
 		</select>
-
+		
+		<br>
 
 		<div class="form-group">
-		    <label for="exampleInputZipcode">*ZIP Code</label>
-    		<input type="zipcode" class="form-control" id="exampleInputZipcode" placeholder="30066">
+		    <label for="exampleInputZipcode"><small>*ZIP Code</small></label>
+    		<input type="zipcode" class="form-control input-sm" id="exampleInputZipcode" placeholder="30066">
 		</div>
 		<div class="form-group">
 
 		<div class="checkbox">
 		  <label>
-		    <input type="checkbox" value="">
+		    <input type="checkbox" value=""><small>
 		    I agree to the Semantic Labs <br>
-		    <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+		    <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></small>
 		  </label>
 		</div>
 		</div>
 
-		<button type="button" class="btn btn-lg btn-primary">Next Step</button>
+		<button type="button" id="next-step">Next Step</button>
 
-		<h6><a href="#">Learn more</a> about why we ask for this information.</h6>
+		<br>
+
+		<small><a href="#">Learn more</a> about why we ask for this information.</small>
 
 	</form>
 	</div>
 
-	<div class="col-sm-1 col-xs-1">
+	<div id="empty-div-right" class="col-sm-1 col-med-1">
 	</div>
+
 
 </div>
 
