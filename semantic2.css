@@ -1,0 +1,172 @@
+body {
+	font-size: 1em; /* reset */
+}
+
+.navbar {
+	height: 60px;
+	background: linear-gradient(#ccc, #999);
+	border-radius: 0px;
+}
+
+.navbar > .container-fluid > .navbar-header {
+	width: 100%;
+	margin-left: 0px; /* for some reason, default is -15px */
+}
+
+@media (max-width: 767px) {
+	#wrapper {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+.container-fluid {
+	padding-top: 12px;
+}
+
+small {
+	color: #777;
+}
+
+small > span {
+	color: #bbb;
+}
+
+h3 {
+	color: #777;
+}
+
+h4 {
+	color: #777;
+}
+
+div#empty-div-left {
+	width: 5%;
+}
+
+div#empty-div-right {
+	width:3.3333%;
+}
+
+img#semantic-icon:before {
+	content:" ";
+	width: 180px;
+	height: 40px;
+	clear: both;
+}
+
+img#semantic-icon {
+	display: block;
+	width: 180px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: -38px;
+}
+
+section.description {
+	margin-top: 40px;
+	margin-bottom: 70px;
+	margin-right: 20px;
+}
+
+.glyphicon {
+	color: #505fbc;
+}
+
+#nav-menu {
+	background-color: transparent;
+	border: 2px solid #ddd;
+	border-radius: 0px;
+}
+
+#search-button {
+	background-color: transparent;
+	border: 2px solid #ddd;
+	border-radius: 0px;
+	float:right;
+	margin-right: 0px;
+}
+
+img#one-account {
+	display: block;
+	width: 200px;
+}
+
+img#across-devices {
+	display: block;
+	width: 350px; /* collapsible to smaller image */
+}
+
+#account-form {
+	border-left: 2px solid #ccc;
+}
+
+@media (max-width: 767px) {
+	#account-form {
+		border-left: 0px solid #ccc;
+	}
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+label {
+	margin: 0px;
+}
+
+.float-right {
+	float: right;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
+
+#exampleInputDOB1, #exampleInputDOB2 {
+	width: 30px;
+}
+
+#exampleInputDOB3, #exampleInputTel3 {
+	width: 45px;
+}
+
+#exampleInputTel1, #exampleInputTel2 {
+	width: 35px;
+}
+
+.form-control#exampleInputDOB1, .form-control#exampleInputDOB2 {
+	padding: 0px 6px;
+}
+
+.form-control#exampleInputDOB3, .form-control#exampleInputTel3 {
+	padding: 0px 6px;
+}
+
+.form-control#exampleInputTel1, .form-control#exampleInputTel2 {
+	padding: 0px 6px;
+}
+
+#exampleInputZipcode {
+	width: 80px;
+}
+
+#inlineRadio1, #inlineRadio2 {
+	margin-top: 0px;
+}
+
+span.gender {
+	padding-left: 5px;
+	padding-right: 10px;
+	font-size: 9pt;
+	color: #777;
+}
+
+button#next-step {
+	color: white;
+	display: block;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #505fbc;
+}
