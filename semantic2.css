@@ -6,6 +6,7 @@ body {
 	height: 60px;
 	background: linear-gradient(#ccc, #999);
 	border-radius: 0px;
+	margin-bottom: 25px;
 }
 
 .navbar > .container-fluid > .navbar-header {
@@ -37,15 +38,16 @@ h3 {
 }
 
 h4 {
+	margin-top: 0px;
 	color: #777;
 }
 
 div#empty-div-left {
-	width: 5%;
+	content: " ";
 }
 
 div#empty-div-right {
-	width:3.3333%;
+	content: " ";
 }
 
 img#semantic-icon:before {
@@ -160,6 +162,52 @@ span.gender {
 	padding-right: 10px;
 	font-size: 9pt;
 	color: #777;
+}
+
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	top: 0;
+  	left: 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+.checkboxFive label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 17px;
+	height: 9px;
+	background: transparent;
+	top: 7px;
+	left: 5px;
+	border: 2px solid #505fbc;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.checkboxFive input[type=checkbox] {
+	display: none;
+}
+
+/* Create the checkbox state for the tick */
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+.checkbox-indent {
+	margin-left: 35px;
 }
 
 button#next-step {
