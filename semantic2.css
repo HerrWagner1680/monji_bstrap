@@ -219,56 +219,26 @@ button#next-step {
 	background-color: #505fbc;
 }
 
-/* stylized radio buttons */
-/* #inlineRadio1, #inlineRadio2 */
-
-/* XXXXXXXXXXXXXXXXXX */
-
-
 input[type="radio"] {
-/*  border: 0; */
   clip: rect(0 0 0 0); 
-/*  height: 1px; */
-/*  margin: -1px; */
- /* overflow: hidden; 
-/*  padding: 0; */
   position: absolute; 
-	/*width: 1px;*/
 }
 
 input[type="radio"] + span::before {
   content: '';
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  vertical-align: -0.25em;
+  width: 10px;
+  height: 10px;
+/*  vertical-align: -0.25em;*/
   background: white;
   border-radius: 15px;
-/*  border: 3px solid #fff;*/
   box-shadow: 0 0 0 1px #bbb;
   margin-right: 8px;
-/*  outline: blue solid medium;*/
-/*  transition: 0.5s ease all;*/
 }
-
-/*#pretty  {
-	margin-left:20px;
-	padding-left:10px;
-}*/
-
 
 input[type="radio"]:checked + span::before {
   background: #bbb;
-/*  box-shadow: 0 0 0 4px #ccc;*/
-/*  outline: blue solid medium;*/
 }
-
-/*input[type="radio"]:focus + span::after {  
-  content: '\0020\2190';
-  font-size: 1.5em;
-  line-height: 1;
-  vertical-align: -0.125em;  
-} */
 
 .inner {
 	margin-left: 5px;
@@ -280,12 +250,12 @@ input[type="radio"]:checked + span::before {
 #radio-outline1, #radio-outline2 {
   content: '';
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   z-index: -10; /* allows access to radio button */
-  margin-top: -36px;
-  vertical-align: -0.25em;
+  margin-top: -34px;
+/*  vertical-align: -0.25em;*/
   background: white;
   border-radius: 25px;
 /*  border: 3px solid #fff;*/
@@ -293,103 +263,15 @@ input[type="radio"]:checked + span::before {
 }
 
 #radio-outline2 {
-	margin-left: 72px;
+	margin-left: 67px;
 }
 
 #radios {
 	margin-left: 5px;
-	margin-top: 5px;
+	margin-top: 2px;
 	margin-bottom: -5px;
 }
 
-/*#inner {
-	content: '';
-	display: inline-block;
-	margin-left: -22px;
-	width: 20px;
-	height: 20px;
-	vertical-align: -8px;
-	border-radius: 20px;
-	border: 2px solid #fff;
-	box-shadow: 0 0 0 4px green;
-	opacity: 0.5;
-	margin-right: 8px;
-}*/
-
-/* XXXXXXXXXXXXXXX */
-
-/*
-input[type="radio"] {
-	border: 10; 
-	/*clip: rect(0 0 0 0); */
-	/*height: 1px; margin: -1px; */
-/*	overflow: hidden; 
-	padding: 0; 
-	position: absolute; 
-	/*width: 1px;*/ /*
+.neg-bottom {
+	margin-bottom: -5px;
 }
-
-input[type="radio"] {
-	margin-right: 30px; 
-/*	padding: 6px;*/   /*
-}
-
-input[type="radio"]:checked {
-	background-color: yellow;
-	border-right: 4px solid yellow;
-}
-
-/*input[type="radio"]:disabled + label {
-	color: #BBB;
-	background-color: #444;
-	border-right: 4px solid #444;
-}*/
-/*
-input[type='radio'] + span {
-    display:inline-block;
-    width:16px;
-    height:16px;
-    margin-left:2px;
-    margin-right: 3px;
-    vertical-align:middle;
-    -moz-border-radius:  50%;
-    border-radius:  50%;
-    background-color: #ccc;
-}
-
-input[type='radio'] + span > .inner > .gender {
-
-    -moz-border-radius:  50%;
-    border-radius:  50%;
-    background-color: #ccc;
-}
-
-/*input[type="radio"]:disabled + label span {
-     background-color: #333;
-     cursor:default;
-}*/
-
-/*input[type="radio"]:disabled + label span .inner {*/
-/*	margin-left: 10%;
-	margin-top: 10%;*/
-/*    width:12px;
-    height:12px;
-    -moz-border-radius:  50%;
-    border-radius:  50%;
-    background-color: #888;
-}*/
-/*
-input[type="radio"] + span .inner {  
-	margin-right: 40px;
-/*	margin-left: 10%;
-	margin-top: 10%;*/
-/*    width:12px;
-    height:12px;
-    -moz-border-radius:  50%;
-    border-radius:  50%;*/   /*
-    background-color: green;  
-}
-
-input[type="radio"]:checked + span {
-     background-color: red;
-}*/
