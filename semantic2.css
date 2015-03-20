@@ -254,7 +254,7 @@ input[type="radio"]:checked + span::before {
   height: 1.9em;
   position: absolute;
   z-index: -10; /* allows access to radio button */
-  margin-top: -3.2em;
+  margin-top: -3.3em;
 /*  vertical-align: -0.25em;*/
   background: white;
   border-radius: 25px;
