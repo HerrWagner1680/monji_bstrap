@@ -250,11 +250,11 @@ input[type="radio"]:checked + span::before {
 #radio-outline1, #radio-outline2 {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 1.9em;
+  height: 1.9em;
   position: absolute;
   z-index: -10; /* allows access to radio button */
-  margin-top: -34px;
+  margin-top: -3.2em;
 /*  vertical-align: -0.25em;*/
   background: white;
   border-radius: 25px;
