@@ -227,13 +227,13 @@ input[type="radio"] {
 input[type="radio"] + span::before {
   content: '';
   display: inline-block;
-  width: 10px;
-  height: 10px;
-/*  vertical-align: -0.25em;*/
+  width: 1em;
+  height: 1em;
+  vertical-align: 0.05em;
   background: white;
   border-radius: 15px;
   box-shadow: 0 0 0 1px #bbb;
-  margin-right: 8px;
+  margin-left: 0px;
 }
 
 input[type="radio"]:checked + span::before {
@@ -241,7 +241,7 @@ input[type="radio"]:checked + span::before {
 }
 
 .inner {
-	margin-left: 5px;
+	margin-left: 9px;
 	color: #777;
 	font-size: 12px;
 	font-weight:400;
@@ -263,7 +263,7 @@ input[type="radio"]:checked + span::before {
 }
 
 #radio-outline2 {
-	margin-left: 67px;
+	margin-left: 6.3em;
 }
 
 #radios {
